@@ -1,0 +1,20 @@
+div#div1{
+	margin: 10px auto;
+	width: 90%;
+	height: 200px;
+	border: 0px solid red;
+}
+div#div2{
+	margin: 10px auto;
+	width: 20%;
+	height: 30px;
+}
+
+#a,#b,#c{
+	margin-left: 20px;
+	width: 27%;
+	height: 200px;
+	border: 1px solid black;
+	float: left;
+	background-color: #000;
+}

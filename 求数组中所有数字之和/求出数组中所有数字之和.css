@@ -1,0 +1,13 @@
+#div1{
+	margin: 10px auto;
+	width: 40%;
+	height: 300px;
+	border: 0px solid blue;
+}
+input{
+	margin-bottom: 20px;
+}
+span{
+	color: #eee;
+	font-size: 10px;
+}
