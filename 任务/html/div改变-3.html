@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>改变div -2</title>
+	<link rel="stylesheet" href="../css/div改变.css" type="text/css">
+	<!--<script type="text/javascript" src="../js/div-2改变.js"></script>-->
+</head>
+<body>
+   <div id="bt">
+	 <button onclick="fun(0)">变宽</button>
+	 <button onclick="fun(1)">变高</button>
+	 <button onclick="fun(2)">变色</button>
+	 <button onclick="fun(3)">隐藏</button>
+	 <button onclick="fun(4)">重置</button>
+   </div> 
+	 <div id="a"></div>
+	 <script type="text/javascript">
+	 	   var a=document.getElementById("a");
+			function fun(x){
+					if(x==0)
+					a.style.width="100px";
+					if(x==1)
+					a.style.height="100px";
+				if(x==2)
+					a.style.backgroundColor="red";
+				if(x==3)
+					a.style.display="none";
+				if(x==4)
+					a.style.display="block";
+			}
+	 </script>
+</body>
+</html>

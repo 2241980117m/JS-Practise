@@ -1,0 +1,31 @@
+body,ul,li{
+	margin: 0px;
+	padding: 0px;
+}
+p{
+	text-align: center;
+	font-size: 15px;
+}
+ul{
+   list-style: none;
+   border: 1px solid black;
+   width: 70px;
+   height: 61px;
+   position: absolute;
+   border-radius: 2px;
+}
+li{
+   width: 70px;
+   height: 20px;
+   border: 0px solid blue;
+   text-align: center;
+   font-size: 15px;
+   line-height: 20px;
+   position: relative;
+   left: 0px;
+}
+li.current{
+	background-color: #eee;
+	color: white;
+	cursor: pointer;
+}

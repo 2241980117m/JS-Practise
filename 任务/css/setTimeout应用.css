@@ -1,0 +1,44 @@
+#top{
+    width:862px;
+    height: 40px;
+    border: 1px solid #407292 ;
+    margin:0px auto; 
+    border-radius: 5px;
+    background-image: url("../image/nav_bg.png");
+    background-position: 105px 180px;
+}
+ul{
+	list-style: none;
+	margin-left: -26px;
+	margin-top: 0px;
+}
+ul li{
+	float: left;
+	width: 93px;
+	height: 40px;
+	line-height: 40px;
+	text-align: center;
+	color: white;
+	font-size: 15px;
+	font-family: "宋体";
+	cursor: pointer;
+	margin-right: 13px;
+}
+.current{
+	border-radius: 10px;
+	background-image:url("../image/nav_bg.png"); 
+	background-position: 310px 510px;
+	font-weight: bolder;
+}
+#bottom{
+     font-size: 10px;
+	 width: 500px;
+	 height: 30px;
+	 border:0px solid black; 
+	 position: absolute;
+	 top: 50px;
+	 left: 380px;
+	 background-image: url("../image/nav_bg.png");
+	 background-position: 7px 603px;
+	 line-height: 30px;
+}

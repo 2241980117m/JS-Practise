@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>显示单击的坐标</title>
+	<link rel="stylesheet" href="../css/显示单击的坐标.css">
+	<script src="../js/显示单击的坐标.js"></script>
+</head>
+<body>
+	<pre>
+   window.onload=function(){
+	document.onclick=function(event){
+		var even=event||event;
+		alert("坐标:["+even.screenX+","+event.screenY+"]");
+	}
+}
+	</pre>
+</body>
+</html>

@@ -1,0 +1,58 @@
+#div1{
+	width: 570px;
+	height: 25px;
+	border: 1px solid white;
+	margin: 0px auto;
+	font-size: 13px;
+	line-height: 25px;
+	font-family: Arial;
+	color: #6B6E69;
+}
+#div1 span{
+	float: left;
+}
+ul,li{
+	margin: 0px;
+	padding:0px;
+	float: left;
+}
+ul{
+	list-style: none;
+}
+li{
+	float: left;
+	margin-left: 5px;
+	border: 0px solid blue;
+	width: 20px;
+	height:20px;
+	background:url(../image/star.png) no-repeat;
+	cursor: pointer;
+}
+.cover{
+	background-position: 0px -28px;
+}
+strong{
+    color: red;
+    letter-spacing: 5px;
+}
+p{
+	background: url(../image/icon.gif) no-repeat;
+	position: relative;
+	top: 8px;
+	left: 0px;
+	display: none;
+	width: 178px;
+	height: 67px;
+	margin-left: 152px;
+	padding-left: 5px;
+	line-height: 18px;
+}
+h5{
+	margin-bottom: 0px;
+	line-height: 20px;
+	padding-top: 8px;
+}
+label{
+    float: left;
+    margin-left: 20px;
+}

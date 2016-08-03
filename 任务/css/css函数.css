@@ -1,0 +1,41 @@
+.div1{
+	width: 400px;
+	height: 200px;
+	border: 1px solid blue;
+	margin: 0px auto;
+	background-color: #807CAB;
+}
+#set{
+	width: 60px;
+	height: 20px;
+	background-color: #0062E8;
+	margin-left: 20px;
+	border: 1px solid black;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+span{
+	color: white;
+	font-weight: bold;
+    font-size: 10px;
+    line-height: 20px;
+}
+#default{
+	width: 100px;
+	height: 20px;
+	background-color: #0062E8;
+	margin-left: 20px;
+	border: 1px solid black;
+	float: left;
+	text-align: center;
+	cursor: pointer;
+}
+.div2{
+	width: 330px;
+	height: 100px;
+	border: 1px solid black;
+	margin: 0px auto;
+	background-color: #4BD6D5;
+	display: block;
+}

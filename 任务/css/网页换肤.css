@@ -1,0 +1,57 @@
+#div1{
+	background-color: #eee;
+	width: 400px;
+	height: 40px;
+}
+#div2{
+	margin-top: 10px;
+	width: 60%;
+	height: 200px;
+	border: 2px solid blue;
+	float: left;
+}
+#div3{
+	width: 30%;
+	margin-top: -200px;
+	margin-left: 63%;
+	height: 40px;
+	border: 2px solid blue;
+	float: left;
+}
+#div4{
+	margin: 220px auto;
+	width: 99%;
+	height: 40px;
+	border: 2px solid blue;
+}
+#div5{
+	margin-left: 110px;
+	width: 200px;
+	height: 40px; 
+}
+div#div1 span{
+	line-height: 40px;
+	padding-left: 10px;
+	float: left;
+}
+div#div2 span,div#div3 span{
+	font-size: 20px;
+	line-height: 40px;
+}
+#a,#b,#c{
+   width: 20px;
+   float: left;
+   height: 20px;
+   margin-left: 40px;
+   background-color: blue;
+   margin-top: 10px;
+}
+#b{
+    background-color: red;
+}
+#c{
+    background-color: #000;
+}
+div#a:visited{
+	border: 1px solid black;
+}

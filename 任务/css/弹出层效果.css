@@ -1,0 +1,53 @@
+html,body{
+	height: 100%;
+	overflow: hidden;
+}
+body{
+	margin: 0px;
+	padding:0px;
+}
+#div1{
+	width: 200px;
+	height: 40px;
+	margin: 10px auto;
+	border:0px solid blue; 
+}
+button{
+		cursor: pointer;
+}
+#div2{
+	width: 100%;
+	height: 100%;
+    opacity: 1;
+}
+button{
+	margin: 10px 35%;
+}
+#close{
+	display: block;
+	background-color: white;
+	height: 20px;
+    width: 5%;
+    text-align: center;
+    float: right;
+    margin: 10px 0px;
+    margin-right: 5px;
+	border: 1px solid #EBED23;
+	cursor: pointer;
+}
+#div4{
+	background-color: #F0F109;
+	height: 40px;
+	border-bottom: 2px solid #FFDF5E;
+	padding-left:10px; 
+}
+#div3{
+     position: absolute;
+     top: 35%;
+     left: 36%;
+     display: none;
+	 border: 2px solid #FFDF5E; 
+	 width: 31%;
+	 height: 200px;
+	 background-color: white;
+}

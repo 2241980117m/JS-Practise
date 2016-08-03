@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>封装兼容性添加，删除</title>
+	<link rel="stylesheet" href="../css/封装兼容性.css">
+	<script src="../js/封装兼容性.js"></script>
+</head>
+<body>
+	<pre>
+		var thing={
+	    addHandler:function(ele,str,fun){
+  ele.addEventListener ? ele.addEventListener(str,fun,false):ele.attachEvent("on"+str,fun)
+	},
+	    removeHandler:function(ele,str,fun){
+	ele.removeEventListener ? ele.removeEventListener(str,fun,false):ele.detachEvent("on"+str,fun)
+	},
+	    addLoadHandler: function (fnHandler) {
+		this.addHandler(window, "load", fnHandler);
+	}
+};
+	</pre>
+	<div id="div1">
+		<button>毫无用处的按钮</button>
+		<button>事件绑定</button>
+		<button>解除绑定</button>
+	</div>
+</body>
+</html>

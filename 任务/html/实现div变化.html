@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>实现div变化</title>
+	<style type="text/css">
+            #fr{
+            	width: 50px;
+            	height: 70px;
+            	margin: 20px 0px 0px 400px;
+            	border:1px solid blue;
+            	display: block;
+                background-color: black;
+            }
+            .fu{
+            	margin-left: 300px;
+            }
+	</style>
+</head>
+<body>
+    <div class="fu">
+	<button onclick="fun(0)">变宽</button>
+	<button onclick="fun(1)">变高</button>
+	<button onclick="fun(2)">变色</button>
+	<button onclick="fun(3)">隐藏</button>
+	<button onclick="fun(4)">重置</button>
+	</div>
+	<div id="fr"></div>  
+	<!--<div id="fr" style="width: 50px;height: 70px;border: 1px solid black;margin:20px 0px 0px 400px;"></div>  -->
+	<script type="text/javascript">
+		function fun(x){
+				var sheet=document.styleSheets[0];
+				var rules=sheet.cssrules||sheet.cssRules;
+				var rule=rules[0];
+              if(x==0)
+              {             
+              	rule.style.cssText="height:70px;width:100px;border:1px solid blue;background-color: black;margin:20px 0px 0px 375px;display: block;";
+              }
+              if(x==1)
+              	rule.style.cssText="height:100px;width:50px;border:1px solid blue;background-color: black;margin:20px 0px 0px 400px;display:block;";
+              if(x==2)
+              	rule.style.cssText="height:100px;width:50px;border:1px solid blue;background-color: white;margin:20px 0px 0px 400px;display: block;";
+              if(x==3)
+              	rule.style.cssText="height:100px;width:50px;border:1px solid blue;background-color: black;margin:20px 0px 0px 400px;display:none;";
+              if(x==4)
+ 				rule.style.cssText="height:100px;width:50px;border:1px solid blue;background-color: black;margin:20px 0px 0px 400px;display:block;";
+		}
+	</script>
+</body>
+</html>

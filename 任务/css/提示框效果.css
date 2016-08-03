@@ -1,0 +1,47 @@
+#outer{
+	margin:10px auto;
+	width: 580px;
+	height: 300px;
+	border: 1px solid #eee;	
+}
+h2{
+	font-size: 15px;
+	font-weight: 100px;
+}
+ul{
+	list-style: none;
+	margin-left: -36px;
+}
+ul li{
+	float: left;
+	width:100px;
+	height:100px;
+	margin-left: 10px;
+	margin-top: 10px;
+	border:1px solid black;
+	background-color:#eee; 
+	text-align:left;
+	cursor:crosshair;
+}
+li img{
+	display: block;
+	width: 124px;
+	height: 124px;
+	position: relative;
+	left: -14px;
+	top: -10px;
+	display: none;
+}
+h3{
+	font-size: 15px;
+	font-weight: 100px;
+	line-height: 10px;
+	margin-left: 10px;
+	color: #525252;
+}
+span{
+	font-size:12px;
+	line-height: 10px; 
+	margin-left: 10px;
+}
+

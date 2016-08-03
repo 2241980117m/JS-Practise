@@ -1,0 +1,16 @@
+#div1{
+	margin: 30px auto;
+	width: 30%;
+	height: 200px;
+	background-color: #000;
+}
+#div2{
+	background-color: #000;
+	position: relative;
+	top: 10px;
+	width:90%;
+	margin: 0px auto; 
+	height:180px;
+	color: white;
+	border:1px solid white; 
+}
