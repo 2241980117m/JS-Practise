@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+	<style>
+	   html,body{
+	   	   height: 100%;
+	   	   background-color: #000;
+	   	   text-align: center;
+	   }
+	   label{
+	   	   font-size: 20px;
+		   color: white;
+	   }
+       table{
+		   margin: 10px auto;
+       }
+       .left{
+       	  padding-right: 5px;
+
+       }
+       .right{
+       	   padding-left:5x; 
+       }
+       .submit{
+       	   width: 60px;
+       	   height: 30px;
+       }
+       h2{
+       	color: white;
+       } 
+	</style>
+</head>
+<body>
+     <h2>教师系统</h2>
+	<form action="post.php" method="post">
+		<table>
+			<tr>
+				<td class="left"><label>教师姓名:</label></td>
+				<td class="right"><input type="text" name="name"></td>
+			</tr>
+			<tr>
+				<td class="left"><label>教工号:</label></td>
+				<td class="right"><input type="text" name="id"></td>
+			</tr>
+			<tr>
+				<td class="left"><label>教师年龄:</label></td>
+				<td class="right"><input type="text" name="age"></td>
+			</tr>
+			<tr>
+				<td class="left"><label>教师性别:</label></td>
+				<td class="right">
+					<select name="sex">
+						<option value="man">男</option>
+						<option value="women" checked>女</option>
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2"><input type="submit" class="submit" >提交</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

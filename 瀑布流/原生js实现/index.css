@@ -1,0 +1,19 @@
+#main{
+    position: relative;
+}
+.box{
+    float: left;
+    padding: 10px 0px 0px 10px;
+}
+.pic{
+    -webkit-box-shadow: 0px 0px 5px #eee;
+    -moz-box-shadow: 0px 0px 5px #eee;
+    box-shadow: 0px 0px 5px #eee;
+    padding: 10px;
+    border-radius: 2px 2px;
+
+}
+img{
+    width:165px !important;
+    height: auto;
+}
