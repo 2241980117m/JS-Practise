@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JS实现拖拽</title>
+	<style type="text/css">
+   
+       .frame {
+    	position: absolute;
+    	width: 20rem;
+    	height: 10rem;
+        left: 50%;
+        top: 50%;
+        margin:-10rem 0 0 -10rem;
+    	border: 1px solid black;
+    	
+	}
+       h2{
+       	 cursor: move;
+       	 margin: 0px;
+       	 padding-bottom: 0.5rem;
+       	 border-bottom: 1px solid black;
+       	 text-align: right;
+       	 padding-right: 0.5rem;
+       }
+       a{
+       	text-decoration: none;
+        font-size: 0.9rem;
+       }
+       span{
+       	padding-left:1rem;
+       }
+       a:hover{
+       	cursor: pointer;
+       }
+	</style>
+	<script type="text/javascript">
+     window.onload=function(){
+     	var frame=document.getElementsByClassName("frame")[0];
+     	var span=frame.getElementsByTagName("span");
+     	var oh=frame.getElementsByTagName("h2")[0];
+     	var oa=oh.getElementsByTagName("a")[0];
+     	var drag=false;
+     	var disX=disY=0;
+     	/*var ops=[{x:frame.offsetLeft,y:frame.offsetTop}];*/
+     	var ops=[];
+
+     	oh.onmousedown=function(event){
+     	   var event =event||window.event;
+           drag=true;
+           disX=event.clientX-frame.offsetLeft;
+           disY=event.clientY-frame.offsetTop;
+      
+           ops.push({x:frame.offsetLeft,y:frame.offsetTop})
+        /*   this.setCapture&&this.setCapture();*/
+           return false;
+           console.log("1 disx:"+disX);
+           connsole.log("1 disy:"+disY);
+          	
+      	}
+     	document.onmousemove=function(event){
+     		console.log("drag:"+drag);
+     		if(!drag) return;
+     		var event=event||window.event;
+
+     		var ol=event.clientX-disX;
+     		var ot=event.clientY-disY;
+     	/*	console.log("offsetWidth: "+frame.offsetWidth);
+     		console.log("offsetHeight: "+frame.offsetHeight);*/
+
+
+            console.log("disX:"+disX);
+            console.log("disY:"+disY);
+
+    		console.log("ol:"+ol);
+            console.log("ot:"+ot);
+     		var maxL = document.documentElement.clientWidth -frame.offsetWidth;
+     		var maxT = document.documentElement.clientHeight  -frame.offsetHeight;
+
+     		console.log("maxL:"+maxL);
+            console.log("maxT:"+maxT);
+
+     		ol=ol<0 ? 0:ol;
+     		ot=ot<0 ? 0:ot;
+
+            console.log("ol2:"+ol);
+            console.log("ot2:"+ot);
+
+     		ol>maxL? maxL:ol;
+     		ot>maxT? maxT:ot;
+
+     		frame.style.marginLeft=0;
+     		frame.style.marginTop=0;
+
+            frame.style.left=ol+'px';
+            frame.style.top=ot+'px';
+     		ops.push({x:ol,y:ot});
+
+     		state();
+     		return false;
+
+     	}
+     	document.onmouseup = window.onblur = oh.onlosecapture = function(){
+     		drag=false;
+     	/*	oh.relaseCapture&&oh.relaseCapture();*/
+     		state();
+        }
+     	function state(){
+     		span[0].innerHTML=drag;
+     		span[1].innerHTML=ops[ops.length-1].x;
+     		span[2].innerHTML=ops[ops.length-1].y;
+     	}
+     	state();
+     	var time=0;
+     	oa.onclick=function callback1(){
+     	/*	 console.log("length:"+ops.length);*/
+
+     	if(ops.length == 1) return;
+     	var timer=setInterval(function(){
+
+     		pos=ops.pop();
+            pos? (frame.style.left=pos.x+'px',frame.style.top=pos.y+'px',state()):clearInterval(timer);
+     	
+     	},100);	
+     		        
+     	}
+     }
+	</script>
+</head>
+<body>
+	<div class="frame">
+		<h2><a>点击回放轨迹</a></h2>
+		<p><strong>Drag</strong><span>false</span></p>
+		<p><strong>offsetLeft</strong><span></span></p>
+		<p><strong>offsetTop</strong><span></span></p>
+	</div>
+</body>
+</html>
